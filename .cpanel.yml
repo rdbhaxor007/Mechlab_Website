@@ -1,0 +1,6 @@
+﻿---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$USER/mechlabbd.com/
+    - /bin/cp -rf * $DEPLOYPATH
+    - /bin/cp -rf .* $DEPLOYPATH 2>/dev/null || true
